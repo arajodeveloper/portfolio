@@ -1,0 +1,79 @@
+html, body {
+  margin: 0; padding: 0;
+}
+
+
+#under {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.rooftop{
+  position: absolute;
+  top: 56.3vw;
+}
+
+
+#over {
+  position: absolute;
+  padding-left: 0px;
+  top: 400px;
+  z-index: 999999;
+}
+
+.flower{width: 20%}
+
+#intro{
+  font-family: "BM YEONSUNG OTF";
+  text-align: right;
+
+}
+
+#intro1{
+  font-family: "BM YEONSUNG OTF";
+  text-align: right;
+
+}
+.vertical-text {
+  display: table-cell;
+  vertical-align: baseline;
+  padding-left: 20px;
+  line-height: normal;
+  clear: both;
+
+}
+
+#projects {
+  opacity: 0.45;
+}
+
+
+/* .sidebar {
+    border: 3px solid pink;
+    padding: 5px;
+} */
+
+.sidebar {
+    width: 50px;
+    height: 35vh;
+}
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+.sidebar{
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+.sidebar:hover {
+  background-color: #white
+}
