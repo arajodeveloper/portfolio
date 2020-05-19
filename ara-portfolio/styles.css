@@ -12,7 +12,7 @@ html, body {
 
 .rooftop{
   position: absolute;
-  top: 56.3vw;
+  top: 56.25vw;
   opacity: 0.45;
 }
 
@@ -61,4 +61,22 @@ html, body {
   transition: all 0.3s ease;
   color: white;
   font-size: 36px;
+}
+
+.story{
+  position: absolute;
+  top: 122.9vw;
+  opacity: 0.35;
+}
+
+.timeline{
+  position: absolute;
+  top: 189.61vw;
+  opacity: 0.45;
+}
+
+.contact{
+  position: absolute;
+  top: 256.26vw;
+  opacity: 0.35;
 }
