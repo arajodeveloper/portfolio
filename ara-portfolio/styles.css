@@ -13,6 +13,7 @@ html, body {
 .rooftop{
   position: absolute;
   top: 56.3vw;
+  opacity: 0.45;
 }
 
 
@@ -25,29 +26,16 @@ html, body {
 
 .flower{width: 20%}
 
-#intro{
+
+.title {
+  position: absolute;
+
   font-family: "BM YEONSUNG OTF";
-  text-align: right;
-
+  text-align: center;
+  top:20px;
+  width: 100%;
 }
 
-#intro1{
-  font-family: "BM YEONSUNG OTF";
-  text-align: right;
-
-}
-.vertical-text {
-  display: table-cell;
-  vertical-align: baseline;
-  padding-left: 20px;
-  line-height: normal;
-  clear: both;
-
-}
-
-#projects {
-  opacity: 0.45;
-}
 
 
 /* .sidebar {
@@ -73,7 +61,4 @@ html, body {
   transition: all 0.3s ease;
   color: white;
   font-size: 36px;
-}
-.sidebar:hover {
-  background-color: #white
 }
