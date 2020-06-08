@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Projects</title>
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+  				selectors: {
+    			  target: '.portfolio',
+    			  filter: '.filter'	
+    		  },
+    		  load: {
+      		  filter: '.react'  
+      		}     
+				});								
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".hcj, .react, .rr, .python, .other">All</span></li>
+			<li><span class="filter" data-filter=".hcj">HTML/CSS/Javascript</span></li>
+			<li><span class="filter" data-filter=".react">React</span></li>
+			<li><span class="filter" data-filter=".rr">Ruby/Rails</span></li>
+			<li><span class="filter" data-filter=".python">Python/Django</span></li>
+			<li><span class="filter" data-filter=".other">Other</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio react" data-cat="react">
+				<div class="portfolio-wrapper">				
+					<img src="img/portfolios/react/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Pig Latin</a>
+							<span class="text-category">React</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio hcj" data-cat="hcj">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/hcj/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Polebuzz Dance Studio</a>
+							<span class="text-category">HTML/CSS/Javascript</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Typography Company</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio hcj" data-cat="hcj">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/hcj/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Unicorn Hunt</a>
+							<span class="text-category">HTML/CSS/Javascript</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">BMF</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Techlion</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio react" data-cat="react">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/react/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Todo List</a>
+							<span class="text-category">react</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<!-- <div class="portfolio hcj" data-cat="hcj">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/hcj/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Graph Plotting</a>
+							<span class="text-category">HTML/CSS/Javascript</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														 -->
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">QR Quick Response</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<!-- <div class="portfolio react" data-cat="react">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/react/6.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mobi Sock</a>
+							<span class="text-category">react</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	 -->
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Domino's Pizza</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>							
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Backend Admin</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Instagram</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Student Guide</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<img src="img/portfolios/icon/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scoccer</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/icon/5.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">3D Map</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="img/portfolios/web/1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Note</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+																				
+
+			<!-- <div class="portfolio react" data-cat="react">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/react/4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bookworm</a>
+							<span class="text-category">react</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																												 -->
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/icon/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sandwich</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/card/3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Reality</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+			<!-- <div class="portfolio react" data-cat="react">
+				<div class="portfolio-wrapper">			
+					<img src="img/portfolios/react/2.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Speciallisterne</a>
+							<span class="text-category">react</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				 -->
+										
+			
+		</div>
+		
+	</div><!-- container -->
+
+</body>
+</html>

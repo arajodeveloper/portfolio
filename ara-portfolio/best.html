@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Ara Jo</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="node_modules/sakura-js/dist/sakura.min.css">
+  <script src="/Users/learnacademy/Downloads/Chart.js-2.9.3/dist/Chart.min.js"></script>
+  <script src="/Users/learnacademy/Downloads/Chart.js-2.9.3/samples/utils.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="/Users/learnacademy/Downloads/Chart.js-2.9.3/dist/Chart.min.js"></script>
+  <script src="/Users/learnacademy/Downloads/Chart.js-2.9.3/samples/utils.js"></script>
+
+  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript">
+  $(function () {
+      
+      var filterList = {
+      
+          init: function () {
+          
+              // MixItUp plugin
+              // http://mixitup.io
+              $('#portfoliolist').mixItUp({
+                selectors: {
+                target: '.portfolio',
+                filter: '.filter'	
+            },
+            load: {
+              filter: '.react'  
+            }     
+              });								
+          
+          }
+
+      };
+      
+      // Run the show!
+      filterList.init();
+      
+      
+  });	
+  </script>
+</head>
+
+<body onload="doSomething()">
+  <div id="over">
+    <img id="theflower" class="flower" src="./movingflower.png" alt="flower" />
+  </div>
+  <div class="container-fluid p-0">
+    <section class="painting-bg">
+        <div class="row justify-content-center">
+            <div class="col text-center">
+                <h1 style="margin-top:10px">Ara Jo</h1>
+                <h2>{ Full Stack Developer }</h2>
+                <br></br>
+                <img id="headshot" src="./headshot.jpg"/>
+                <div id="contact-intro" style="font-size: 20px;">
+                  <h3 style="z-index: 999">
+                    arajo0423@gmail.com
+                    <a target="_blank" style="color:salmon" href="https://github.com/arajodeveloper?tab=repositories" style="padding-left:20px; z-index: 999;"><i class="fa fa-github"></a></i>
+                    <a target="_blank" style="color:salmon" href="https://www.linkedin.com/in/arajodeveloper/"  style="padding-left:20px"><i class="fa fa-linkedin"></a></i> 
+                    
+
+                  </h3>
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" style="color:purple" href="#projectsection"><strong>PROJECTS</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active"  style="color:purple" href="#skillsection"><strong></strong>SKILLS</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active"  style="color:purple" href="#contactsection"><strong></strong>CONTACT</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active"  style="color:purple" href="#aboutmesection"><strong></strong>ABOUT ME</strong></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active"  style="color:purple" href="#"><strong></strong>RESUME</strong></a>
+                    </li>
+                  </ul>
+      
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projectsection">
+        <div class="row justify-content-center" >
+            <div class="col text-center">
+                <h1 style="margin-top:10px">Projects</h1>
+                <br></br>
+                <ul id="filters" class="clearfix" style="width:700px; margin: 0 auto;">
+                    <li><span class="filter active" data-filter=".hcj, .react, .rr, .python, .other" style="font-size: 18px;">All</span></li>
+                    <li><span class="filter" data-filter=".hcj" style="font-size: 18px;">HTML/CSS/Javascript</span></li>
+                    <li><span class="filter" data-filter=".react" style="font-size: 18px;">React</span></li>
+                    <li><span class="filter" data-filter=".rr" style="font-size: 18px;">Ruby/Rails</span></li>
+                    <li><span class="filter" data-filter=".python" style="font-size: 18px;">Python/Django</span></li>
+                    <li><span class="filter" data-filter=".other" style="font-size: 18px;">Other</span></li>
+                </ul>
+                <div class="center-con">
+                  <div class="inner">
+                    <div id="portfoliolist">
+                      <div class="portfolio react" data-cat="react">
+                          <div class="portfolio-wrapper">				
+                              <img src="img/portfolios/react/1.jpg" alt="" style="width:700px; margin: 0 auto;"/>
+                              <div class="label">
+                                  <div class="label-text">
+                                      <a class="text-title">Pig Latin</a>
+                                      <span class="text-category">React</span>
+                                  </div>
+                                  <div class="label-bg"></div>
+                              </div>
+                          </div>
+                      </div>				
+          
+                      <div class="portfolio hcj" data-cat="hcj">
+                          <div class="portfolio-wrapper">			
+                              <img src="img/portfolios/hcj/1.jpg" alt="" style="width:700px; margin: 0 auto;"/>
+                              <div class="label">
+                                  <div class="label-text">
+                                      <a class="text-title">Polebuzz Dance Studio</a>
+                                      <span class="text-category">HTML/CSS/Javascript</span>
+                                  </div>
+                                  <div class="label-bg"></div>
+                              </div>
+                          </div>
+                      </div>				
+                                  
+                      <div class="portfolio hcj" data-cat="hcj">
+                          <div class="portfolio-wrapper">
+                              <img src="img/portfolios/hcj/2.jpg" alt="" style="width:700px; margin: 0 auto;"/>
+                              <div class="label">
+                                  <div class="label-text">
+                                      <a class="text-title">Unicorn Hunt</a>
+                                      <span class="text-category">HTML/CSS/Javascript</span>
+                                  </div>
+                                  <div class="label-bg"></div>
+                              </div>
+                          </div>
+                      </div>			
+                      
+                      <div class="portfolio react" data-cat="react">
+                          <div class="portfolio-wrapper">			
+                              <img src="img/portfolios/react/2.jpg" alt="" style="width:700px; margin: 0 auto;"/>
+                              <div class="label">
+                                  <div class="label-text">
+                                      <a class="text-title">Todo List</a>
+                                      <span class="text-category">React</span>
+                                  </div>
+                                  <div class="label-bg"></div>
+                              </div>
+                          </div>
+                      </div>			
+
+                      <div class="portfolio react" data-cat="react">
+                         <div class="portfolio-wrapper">			
+                              <img src="img/portfolios/react/3.jpg" alt="" style="width:700px; margin: 0 auto;"/>
+                               <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Ecommerce: Clothing Store</a>
+                                        <span class="text-category">React</span>
+                                     </div>
+                                  <div class="label-bg"></div>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <section class="skills-bg" id="skillsection">       
+            <div class="row justify-content-center dark-row">
+                <div class="col text-center">
+                  <h1>Technical Skills</h1>
+                  <div class="chart-wrap">
+                    <div class="chart-title">
+                    </div>
+                    <div id="dashboard-stats" class="chart bars-horizontal brand-primary">
+                      <div class="row">
+                        <span class="label">HTML</span>
+                        <div class="bar-wrap">
+                          <div class="bar" data-value="60"></div>
+                        </div>
+                        <span class="number">60</span>
+                      </div>
+                      <div class="row">
+                        <span class="label">CSS</span>
+                        <div class="bar-wrap">
+                          <div class="bar" data-value="60"></div>
+                        </div>
+                        <span class="number">60</span>
+                      </div>
+                      <div class="row">
+                        <span class="label">Javascript</span>
+                        <div class="bar-wrap">
+                          <div class="bar" data-value="55"></div>
+                        </div>
+                        <span class="number">55</span>
+                      </div>
+                      <div class="row">
+                        <span class="label">React JS</span>
+                        <div class="bar-wrap">
+                          <div class="bar" data-value="55"></div>
+                        </div>
+                        <span class="number">55</span>
+                      </div>
+                      <div class="row">
+                        <span class="label">Ruby/Rails</span>
+                        <div class="bar-wrap">
+                          <div class="bar" data-value="50"></div>
+                        </div>
+                        <span class="number">50</span>
+                      </div>
+                      <div class="row">
+                        <span class="label">Postgresql</span>
+                        <div class="bar-wrap">
+                          <div class="bar" data-value="50"></div>
+                        </div>
+                        <span class="number">50</span>
+                      </div>
+                      <div class="row">
+                        <span class="label">Python/Django</span>
+                        <div class="bar-wrap">
+                          <div class="bar" data-value="30"></div>
+                        </div>
+                        <span class="number">30</span>
+                      </div>
+                    </div>
+                  </div>
+                       
+                  </div>
+                  </div>   
+    </section>
+    <section class="contact-bg" id="contactsection">       
+      <div class="row justify-content-center">
+          <div class="col text-center">
+                  <h1 style="margin-top:10px">Want to Chat? :)</h1>
+                  <div class = "frame">
+                    <div id = "button_open_envelope">
+                                    Email me
+                                </div>
+                                <div class = "message">
+                                    <form method="post" action="contact.php">
+                                        <input type="text" name="name" id="name" placeholder=" Name* " required>
+                                
+                                        <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+                                    
+                                        <input type="text" name="phone" id="phone" placeholder=" Phone (optional)"> 
+                                    
+                                        <textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
+                                
+                                        <input type="text" name="address" id="address" style="display: none;">
+                                        <input type="submit" value="Send" id="send">
+                                    </form>
+                                </div>
+                                <div class = "bottom"></div>			
+                                <div class = "left"></div>
+                                <div class = "right"></div>
+                                <div class = "top"></div>
+                                <script src="script.js"></script>
+                            </div>
+              </div>
+          </div>
+      </div>      
+</section>
+    <section class="timeline-bg" >
+      <div class="row justify-content-center dark-row">
+        <div class="col text-center">
+          <h1 style="margin-top:10px"></h1>
+          <div id="wrapper">
+    <div id="container">
+
+        <section class="open-book" id="aboutmesection">
+            <header>
+                <h1>Book Layout</h1>
+                <h6>Ara Jo</h6>
+            </header>
+            <article>
+                <h2 class="chapter-title">Creating Own Path</h2>
+                <p>
+                 There was a girl who dreamed to be a k-pop start growing up in South Korea. She went countless auditions signing in front of people to see her potential-- but what she only received was also countless rejections. She quickly realizes that what she dreamed was merely a fantasy. She takes on her different path in the academic world.      
+                </p>
+                <br></br>
+                <p>
+                  She loved Philosophy. A book, "The Republic" by Plato was a completely eye-opening for her. She was hooked by beautiful conversation by Socrates and realized the power of logical thinking in life and countless questions why people do certain things on what people do. 
+                </p>
+                <br></br>
+                <p>
+                    She also loved learaning languages. She has always wanted to study English language. Her best friend invited her to stay with her in Houston, Texas and attended the English langague school. Then, her new journey started. 
+                </p>
+                <br></br>
+                <p>
+                    When she felt comfortable speaking in English, she wanted to see what it would be like studying in college in the USA. She chose a Philosophy and Religious Studies major to study in <a href="https://pace.edu"> Pace University</a> and suprisingly, she decides to pursue Master's degree in Philosophy and Education in <a href="https://columbia.edu">Columbia University.</a>
+                </p>
+                <br></br>
+                <p>
+                    During her study in Columbia University, she started dreaming of becoming an educator. She starts thinking of her teachers in middle school and a high school. She remembers the worst math teacher who helped her nothing but to hate math for the rest of her school life. Then, she decides to become a math teacher. Why? She was confident. Not just in math-- but also confident in teaching math for those who struggle just like her in her childhood. 
+                </p>
+                <br></br>
+                <p>
+                    She enjoyed teaching students in a middle school and a high school for two years. She started asking questions about what existed in current education. Can there be better grading system for teachers to save time? Can there be a software that could store all the datas so that we are not flying around with pieces of paper? How amazing would it be the person who creates something from zero? She thought.
+                </p>
+                <br></br>
+      
+                <p>
+                    She paused, and began to explore the world of creation-- speicifically in softwre development. She wanted to be part of the world with people who create anything from zero. 
+                </p>
+                <dl>
+                    <dt><strong style="font-size: 20px;">SUMMARY<strong></dt>
+                    <dd>
+                        <em></em><br>
+                    </dd>
+                </dl>
+                <p>
+                   
+                </p>
+                <p>
+                    
+                </p>
+                <ul>
+                    <p style="font-size: 20px;">Childhood</p>
+                    <li>
+                       Ara was born in South Korea and grew up wanting to become a k-pop star when she was young.
+                    </li>
+                    <br></br>
+
+
+                    <p style="font-size: 20px;">Journey to US</p>
+                    <li>Ara's interest in learning English language took her to the US and she continued her academic interest by studying Philosophy and Education. </li>
+                    <li>She has B.A. in Philophy and Religious Studies from Pace Univesity and M.A. in Philosohy and Edcuation from Columbia University.</li>
+                    
+                </ul>
+                <br></br>
+               
+                <ul>
+                    <p style="font-size: 20px;">Math Teacher</p>
+                       
+                            <li>Ara did not have a good math teacher in her childhood, so she wanted to become a math teacher to give students good experience learning math. </li>
+                            <li>She taught math in a high school and a middle school.</li>
+              
+                    
+                </ul>
+                <br></br>
+
+                <ul>
+                  <p style="font-size: 20px;">Software development</p>
+                  
+                         
+                          <li>While teaching, she explored ideas of software development.</li>
+                          <li>She become so fascinated about the idea of creation as a web developer.</li>
+            
+                  
+              </ul>
+          
+            
+               
+          
+                
+            </article>
+            <footer>
+                <ol id="page-numbers">
+                    <li>1</li>
+                    <li>2</li>
+                </ol>
+            </footer>
+        </section>
+
+    </div>
+</div>
+</section>
+
+
+    
+  
+ 
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="node_modules/sakura-js/dist/sakura.min.js"></script>
+  <script>
+      var sakura = new Sakura('body');
+  </script>
+
+</body>
+</html>
