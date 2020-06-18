@@ -621,6 +621,7 @@ body {
 	transition:.35s;
     letter-spacing: 1px;
     font-family: "BM YEONSUNG OTF";
+  
 }
 #send:hover{background:#57658F;transition:.35s;}
 
@@ -806,6 +807,3 @@ body {
     padding-right: 0;
   }
 }
-
-
-

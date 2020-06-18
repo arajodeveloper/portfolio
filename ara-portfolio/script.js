@@ -9,6 +9,24 @@ const doSomething = () => {
     flower.style.transform = "rotate("+window.pageYOffset+"deg)";
   });
 }
+
+const sendTheMail = () => {
+  var name = $('#name').val()
+  var email = $('#email').val()
+  var phone = $('#phone').val()
+  var subject = $('#subject').val()
+  var message = $('#messarea').val()
+  $.ajax({
+    url:'http://localhost:5000/',
+    type:"POST",
+    data:{name: name, email: email, phone: phone, subject: subject, message: message},
+    dataType:"json",
+    success: function(){
+      console.log('oh god')
+    }
+  })
+}
+
 $(document).ready(function(){
 	$('.frame').click(function(){
 		$('.top').addClass('open');

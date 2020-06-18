@@ -102,6 +102,7 @@
             </div>
         </div>
     </section>
+
     <section class="projects" id="projectsection">
         <div class="row justify-content-center" >
             <div class="col text-center">
@@ -123,7 +124,7 @@
                               <img src="img/portfolios/react/1.jpg" alt="" style="width:700px; margin: 0 auto;"/>
                               <div class="label">
                                   <div class="label-text">
-                                      <a class="text-title">Pig Latin</a>
+                                      <a target="_blank" href="https://github.com/arajodeveloper/Challenge-Pig-Latin-React" class="text-title">Pig Latin</a>
                                       <span class="text-category">React</span>
                                   </div>
                                   <div class="label-bg"></div>
@@ -136,20 +137,33 @@
                               <img src="img/portfolios/hcj/1.jpg" alt="" style="width:700px; margin: 0 auto;"/>
                               <div class="label">
                                   <div class="label-text">
-                                      <a class="text-title">Polebuzz Dance Studio</a>
+                                      <a class="text-title" target="_blank" href="https://github.com/arajodeveloper/polebuzz">Polebuzz Dance Studio</a>
                                       <span class="text-category">HTML/CSS/Javascript</span>
                                   </div>
                                   <div class="label-bg"></div>
                               </div>
                           </div>
                       </div>				
+
+                      <div class="portfolio python" data-cat="python">
+                        <div class="portfolio-wrapper">			
+                            <img src="img/portfolios/python/1.jpg" alt="" style="width:700px; margin: 0 auto;"/>
+                            <div class="label">
+                                <div class="label-text">
+                                    <a class="text-title" target="_blank" href="https://github.com/arajodeveloper/weather_app">Weather App</a>
+                                    <span class="text-category">Python/Django</span>
+                                </div>
+                                <div class="label-bg"></div>
+                            </div>
+                        </div>
+                    </div>				
                                   
                       <div class="portfolio hcj" data-cat="hcj">
                           <div class="portfolio-wrapper">
                               <img src="img/portfolios/hcj/2.jpg" alt="" style="width:700px; margin: 0 auto;"/>
                               <div class="label">
                                   <div class="label-text">
-                                      <a class="text-title">Unicorn Hunt</a>
+                                      <a class="text-title" target="_blank" href="https://github.com/arajodeveloper/unicorn_hunt">Unicorn Hunt</a>
                                       <span class="text-category">HTML/CSS/Javascript</span>
                                   </div>
                                   <div class="label-bg"></div>
@@ -162,7 +176,7 @@
                               <img src="img/portfolios/react/2.jpg" alt="" style="width:700px; margin: 0 auto;"/>
                               <div class="label">
                                   <div class="label-text">
-                                      <a class="text-title">Todo List</a>
+                                      <a target="_blank" href="https://github.com/arajodeveloper/todolist" class="text-title">Todo List</a>
                                       <span class="text-category">React</span>
                                   </div>
                                   <div class="label-bg"></div>
@@ -175,7 +189,7 @@
                               <img src="img/portfolios/react/3.jpg" alt="" style="width:700px; margin: 0 auto;"/>
                                <div class="label">
                                     <div class="label-text">
-                                        <a class="text-title">Ecommerce: Clothing Store</a>
+                                        <a target="_blank" href="https://github.com/arajodeveloper/react-clothing-store" class="text-title">Ecommerce: Clothing Store</a>
                                         <span class="text-category">React</span>
                                      </div>
                                   <div class="label-bg"></div>
@@ -188,6 +202,7 @@
               </div>
         </div>
     </section>
+ 
     <section class="skills-bg" id="skillsection">       
             <div class="row justify-content-center dark-row">
                 <div class="col text-center">
@@ -251,6 +266,7 @@
                   </div>
                   </div>   
     </section>
+
     <section class="contact-bg" id="contactsection">       
       <div class="row justify-content-center">
           <div class="col text-center">
@@ -260,7 +276,7 @@
                                     Email me
                                 </div>
                                 <div class = "message">
-                                    <form method="post" action="contact.php">
+                                    <form method="post">
                                         <input type="text" name="name" id="name" placeholder=" Name* " required>
                                 
                                         <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
@@ -270,7 +286,7 @@
                                         <textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
                                 
                                         <input type="text" name="address" id="address" style="display: none;">
-                                        <input type="submit" value="Send" id="send">
+                                        <input onclick="sendTheMail()" value="Send" id="send">
                                     </form>
                                 </div>
                                 <div class = "bottom"></div>			
@@ -283,47 +299,47 @@
           </div>
       </div>      
 </section>
-    <section class="timeline-bg" >
+    <!-- <section class="timeline-bg" >
       <div class="row justify-content-center dark-row">
         <div class="col text-center">
           <h1 style="margin-top:10px"></h1>
           <div id="wrapper">
-    <div id="container">
+    <div id="container"> -->
 
         <section class="open-book" id="aboutmesection">
             <header>
-                <h1>Book Layout</h1>
+              
                 <h6>Ara Jo</h6>
             </header>
             <article>
                 <h2 class="chapter-title">Creating Own Path</h2>
                 <p>
-                 There was a girl who dreamed to be a k-pop start growing up in South Korea. She went countless auditions signing in front of people to see her potential-- but what she only received was also countless rejections. She quickly realizes that what she dreamed was merely a fantasy. She takes on her different path in the academic world.      
+                 There was a girl who dreamed to be a k-pop star growing up in South Korea. She went countless auditions singing in front of people to see her potential-- but what she only received was also countless rejections. She quickly realized that what she dreamed was merely a fantasy. She took a different path to the academic world.      
                 </p>
                 <br></br>
                 <p>
-                  She loved Philosophy. A book, "The Republic" by Plato was a completely eye-opening for her. She was hooked by beautiful conversation by Socrates and realized the power of logical thinking in life and countless questions why people do certain things on what people do. 
+                  She loved Philosophy. A book, <a target="_blnak" href="https://en.wikipedia.org/wiki/Republic_(Plato)">"Republic" by Plato</a> was a completely eye-opening for her. She was hooked by beautiful conversation of Socrates and other philosophers. She realized the power of logical thinking and questioned why people do things the way they do.
                 </p>
                 <br></br>
                 <p>
-                    She also loved learaning languages. She has always wanted to study English language. Her best friend invited her to stay with her in Houston, Texas and attended the English langague school. Then, her new journey started. 
+                    She also loved learning languages, and always wanted to study English. Her best friend invited her to stay with her in Houston, Texas and attend an English language school. Thus, her new journey began. 
                 </p>
                 <br></br>
                 <p>
-                    When she felt comfortable speaking in English, she wanted to see what it would be like studying in college in the USA. She chose a Philosophy and Religious Studies major to study in <a href="https://pace.edu"> Pace University</a> and suprisingly, she decides to pursue Master's degree in Philosophy and Education in <a href="https://columbia.edu">Columbia University.</a>
+                    After she felt comfortable speaking in English, she wanted to experience studying in college in the USA. She chose to study Philosophy and Religious Studies at <a target="_blank" href="https://www.pace.edu/dyson/departments/philosophy-religious-studies"> Pace University</a> and continued on for her Master's degree in Philosophy and Education at <a target="_blank" href="https://www.tc.columbia.edu/arts-and-humanities/philosophy/">Columbia University.</a>
                 </p>
                 <br></br>
                 <p>
-                    During her study in Columbia University, she started dreaming of becoming an educator. She starts thinking of her teachers in middle school and a high school. She remembers the worst math teacher who helped her nothing but to hate math for the rest of her school life. Then, she decides to become a math teacher. Why? She was confident. Not just in math-- but also confident in teaching math for those who struggle just like her in her childhood. 
+                    During her studies at Columbia University, she started dreaming of becoming an educator. She thought of her teachers in middle school and a high school. She remembered the math teacher who made her doubt her math skills. Then, she decided to become a math teacher. Why? She was confident. Not just in math-- but also confident in teaching math for those who struggle just like her in her childhood. 
                 </p>
                 <br></br>
                 <p>
-                    She enjoyed teaching students in a middle school and a high school for two years. She started asking questions about what existed in current education. Can there be better grading system for teachers to save time? Can there be a software that could store all the datas so that we are not flying around with pieces of paper? How amazing would it be the person who creates something from zero? She thought.
+                    She enjoyed teaching students in middle school and high school for two years. She started asking questions about how to improve the curriculum. Could there be a better grading system that saves teachers' time? Could there be software tools that reduce administrative paperwork? How amazing would it be to create those tools?
                 </p>
                 <br></br>
       
                 <p>
-                    She paused, and began to explore the world of creation-- speicifically in softwre development. She wanted to be part of the world with people who create anything from zero. 
+                    She paused, and began to explore the world of creation-- specifically in softwre development. She wanted to be part of the world with people who create anything from zero. 
                 </p>
                 <dl>
                     <dt><strong style="font-size: 20px;">SUMMARY<strong></dt>
@@ -345,9 +361,9 @@
                     <br></br>
 
 
-                    <p style="font-size: 20px;">Journey to US</p>
+                    <p style="font-size: 20px;">Journey to USA</p>
                     <li>Ara's interest in learning English language took her to the US and she continued her academic interest by studying Philosophy and Education. </li>
-                    <li>She has B.A. in Philophy and Religious Studies from Pace Univesity and M.A. in Philosohy and Edcuation from Columbia University.</li>
+                    <li>She has B.A. in Philophy and Religious Studies from <a target="_blank" href="https://www.pace.edu/dyson/departments/philosophy-religious-studies">Pace Univesity</a> and M.A. in Philosophy and Education from <a target="_blank" href="https://www.tc.columbia.edu/arts-and-humanities/philosophy/">Columbia University.</a></li>
                     
                 </ul>
                 <br></br>
@@ -355,8 +371,8 @@
                 <ul>
                     <p style="font-size: 20px;">Math Teacher</p>
                        
-                            <li>Ara did not have a good math teacher in her childhood, so she wanted to become a math teacher to give students good experience learning math. </li>
-                            <li>She taught math in a high school and a middle school.</li>
+                            <li>Ara did not have a good math teacher in her childhood, so she wanted to become a math teacher to give students good experience in learning math. </li>
+                            <li>She taught math in a high school and a middle school for last two years.</li>
               
                     
                 </ul>
@@ -367,7 +383,7 @@
                   
                          
                           <li>While teaching, she explored ideas of software development.</li>
-                          <li>She become so fascinated about the idea of creation as a web developer.</li>
+                          <li>She become so passionate about creating as a web developer.</li>
             
                   
               </ul>
