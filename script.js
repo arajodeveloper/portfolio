@@ -17,7 +17,7 @@ const sendTheMail = () => {
   var subject = $('#subject').val()
   var message = $('#messarea').val()
   $.ajax({
-    url:'http://localhost:5000/',
+    url:'http://arajo-api.herokuapp.com/',
     type:"POST",
     data:{name: name, email: email, phone: phone, subject: subject, message: message},
     dataType:"json",
